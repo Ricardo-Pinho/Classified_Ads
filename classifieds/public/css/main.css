@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+body {
+	font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+	font-size:100%;
+	background:gray;
+	background:url(../img/background.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+	margin:25px 75px 75px 75px;
+
+}
+
+html {
+	position:relative;
+	min-height: 100%;
+}
+
+.header {
+	margin-left:; 25px;
+	margin-right: 25px;
+	/*border-top-style: double;*/
+	border-bottom-style: double;
+    border-width: 10px;
+    text-align: center;
+
+}
+
+#content{
+	padding-left: 250px;
+	margin-top:5px;
+	/*display:inline-block;*/
+}
+
+.advert{
+	width:300px;
+	heght:400px;
+	display:inline-block;
+	border-style:solid;
+	margin:5px;
+	border-width:3px;
+	text-align: center;
+}
+
+.advert:hover{
+	cursor:pointer;
+}
+
+.advert:hover .clickad{
+	background:rgba(27,155,255,0.85);
+	display:block;
+}
+
+.advert:hover .clickad_info{
+	color:white;
+	text-decoration: none;
+	height:100%;
+	width:100%;
+	display:block;
+}
+
+.advert h4{
+	background:black;
+	margin:0px;
+	padding:0px;
+	color:white;
+	width:300px;
+	height:80px;
+	line-height: 80px;
+	position:absolute;
+}
+.advert h4 span{
+  display: inline-block;
+  vertical-align: middle;
+  margin:3px;
+  line-height: 20px;
+}
+
+.advert .container{
+	height:330px;
+	width: 300px;
+	padding-top:80px;
+	position:relative;
+	
+}
+.advert .ad_info, .advert .clickad{
+	width:100%;
+	position:absolute;
+
+}
+.advert .ad_info{
+	background:rgba(27,155,255,0.3);
+	padding-top:40px;
+	height:290px;
+
+}
+
+.advert .clickad{
+	display:none;
+	height:330px;
+	z-index:10;
+}
+
+.main_img{
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+
+.header h1 {
+	font-size:400%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu {
+	float: left;
+	margin: 5px;
+	margin-top:10px;
+	border-style:solid;
+	border-width:2px;
+}
+
+.menu h3{
+	text-align:center;
+	background: rgb(75,75,75);
+	margin:0px;
+	padding:5px;
+	color:white;
+}
+.advert_geninfo{
+	padding:0px;
+	margin:5px;
+}
+
+#category_bar{
+	margin:5px;
+	padding:2px;
+	background: gray;
+	color:white;
+	margin-left: 255px;
+	margin-right: 85px;
+
+	
+}
+#category_bar {  
+	height: 20px; 
+	background: black; 
+	position: relative; 
+} 
+#category_bar:before { 
+	content: ""; 
+	position: absolute; 
+	right: -24px; top: 0; 
+	width: 0; height: 0; 
+	border-top: 12px solid transparent; 
+	border-bottom: 12px solid transparent; 
+	border-left: 25px solid black; 
+}
+
+.category_bar_link a{
+	color:white;
+	text-decoration: none;
+}
+
+.category_bar_link a:hover{
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+#xml_json_links{
+	background:gray;
+	color:white;
+	text-align:center;
+}
+
+#xml_json_links a {
+	width:100%;
+	color: white;
+	text-decoration:none;
+}
+
+#xml_json_links a:hover {
+	cursor:pointer;
+	background:rgb(200,200,200);
+	color:black;
+}
+
+#more_button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #990000;
+	text-align: center;
+	padding: 5px;
+	background-color: #fff;
+	background-image: url("http://s.twimg.com/a/1261078355/images/more.gif");
+	background-repeat: repeat-x;
+	cursor: pointer;
+	border: 1px solid #AAA;
+	margin-left: 255px;
+	margin-right:60px;
+}
+
+#loadimg{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align: center;
+	padding: 5px;
+	background-color: #fff;
+	background-image: url("http://s.twimg.com/a/1261078355/images/more.gif");
+	background-repeat: repeat-x;
+	cursor: pointer;
+	border: 1px solid #AAA;
+	text-align:center;
+	display:none;
+	margin-left: 255px;
+	margin-right:60px;
+}
+ 
+#more_button:hover {
+	border:1px solid #bbb;
+	text-decoration:none;
+	background-position:left -78px;
+}
+
+.footer{
+	text-align:center;
+}
+
+/* jssor slider arrow navigator skin 09 css */
+            /*
+            .jssora09l              (normal)
+            .jssora09r              (normal)
+            .jssora09l:hover        (normal mouseover)
+            .jssora09r:hover        (normal mouseover)
+            .jssora09ldn            (mousedown)
+            .jssora09rdn            (mousedown)
+            */
+            .jssora09l, .jssora09r, .jssora09ldn, .jssora09rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(../img/a09.png) no-repeat;
+                overflow:hidden;
+                opacity: .4; filter:alpha(opacity=40);
+            }
+            .jssora09l { background-position: -5px -35px; }
+            .jssora09r { background-position: -65px -35px; }
+            .jssora09l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
+            .jssora09r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
+            .jssora09ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
+            .jssora09rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
+          /* jssor slider thumbnail navigator skin 05 css */
